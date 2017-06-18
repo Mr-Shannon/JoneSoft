@@ -204,8 +204,14 @@ namespace JoneSoft
         private void ClearSendButton_MouseClick(object sender, MouseEventArgs e)
         {
             sendRichTextBox.Clear();
-           
+        }
 
+        private void MultiSendButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (!isPortOpen) return;
+            MultiSendForm multi_send_form = new MultiSendForm();
+
+            multi_send_form.Show();
         }
     }
 }

@@ -16,3 +16,4 @@ E:\Visual Studio\Visual C#\JoneSoft\JoneSoft\obj\Debug\JoneSoft.Properties.Resou
 E:\Visual Studio\Visual C#\JoneSoft\JoneSoft\obj\Debug\JoneSoft.csproj.GenerateResource.Cache
 E:\Visual Studio\Visual C#\JoneSoft\JoneSoft\obj\Debug\JoneSoft.exe
 E:\Visual Studio\Visual C#\JoneSoft\JoneSoft\obj\Debug\JoneSoft.pdb
+E:\Visual Studio\Visual C#\JoneSoft\JoneSoft\obj\Debug\JoneSoft.MultiSendForm.resources

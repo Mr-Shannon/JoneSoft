@@ -47,7 +47,6 @@
             this.sendRichTextBox = new System.Windows.Forms.RichTextBox();
             this.portGroupBox = new System.Windows.Forms.GroupBox();
             this.statusPortLabel = new System.Windows.Forms.Label();
-            this.portPictureBox = new System.Windows.Forms.PictureBox();
             this.stopBitLabel = new System.Windows.Forms.Label();
             this.stopBitComboBox = new System.Windows.Forms.ComboBox();
             this.parityBitLabel = new System.Windows.Forms.Label();
@@ -62,6 +61,7 @@
             this.receiveRichTextBox = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.portPictureBox = new System.Windows.Forms.PictureBox();
             this.JoneTabControl.SuspendLayout();
             this.SerialTabPage.SuspendLayout();
             this.serialStatusStrip.SuspendLayout();
@@ -69,8 +69,8 @@
             this.sendSetGroupBox.SuspendLayout();
             this.sendGroupBox.SuspendLayout();
             this.portGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.portPictureBox)).BeginInit();
             this.receiveGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.portPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // JoneTabControl
@@ -212,6 +212,7 @@
             this.multiSendButton.TabIndex = 3;
             this.multiSendButton.Text = "多项发送";
             this.multiSendButton.UseVisualStyleBackColor = true;
+            this.multiSendButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MultiSendButton_MouseClick);
             // 
             // clearSendButton
             // 
@@ -285,20 +286,6 @@
             this.statusPortLabel.Size = new System.Drawing.Size(106, 24);
             this.statusPortLabel.TabIndex = 12;
             this.statusPortLabel.Text = "开启串口";
-            // 
-            // portPictureBox
-            // 
-            this.portPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.portPictureBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.portPictureBox.ErrorImage = null;
-            this.portPictureBox.Image = global::JoneSoft.Properties.Resources.port_off;
-            this.portPictureBox.InitialImage = global::JoneSoft.Properties.Resources.port_on;
-            this.portPictureBox.Location = new System.Drawing.Point(459, 39);
-            this.portPictureBox.Name = "portPictureBox";
-            this.portPictureBox.Size = new System.Drawing.Size(109, 51);
-            this.portPictureBox.TabIndex = 11;
-            this.portPictureBox.TabStop = false;
-            this.portPictureBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PortPictureBox_MouseClick);
             // 
             // stopBitLabel
             // 
@@ -456,6 +443,20 @@
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // portPictureBox
+            // 
+            this.portPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.portPictureBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.portPictureBox.ErrorImage = null;
+            this.portPictureBox.Image = global::JoneSoft.Properties.Resources.port_off;
+            this.portPictureBox.InitialImage = global::JoneSoft.Properties.Resources.port_on;
+            this.portPictureBox.Location = new System.Drawing.Point(459, 39);
+            this.portPictureBox.Name = "portPictureBox";
+            this.portPictureBox.Size = new System.Drawing.Size(109, 51);
+            this.portPictureBox.TabIndex = 11;
+            this.portPictureBox.TabStop = false;
+            this.portPictureBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PortPictureBox_MouseClick);
+            // 
             // JoneForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -482,8 +483,8 @@
             this.sendGroupBox.ResumeLayout(false);
             this.portGroupBox.ResumeLayout(false);
             this.portGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.portPictureBox)).EndInit();
             this.receiveGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.portPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
